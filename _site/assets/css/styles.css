@@ -5,9 +5,9 @@
 
 body { font-family: 'Libre Franklin', sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; min-height: 100vh; }
 
-header, main, footer { padding: 1em; }
+main, footer { padding: 1em; }
 
-h1, h2 { font-family: Opticorvinus; font-weight: normal; }
+h1, h2 { font-family: Opticorvinus; font-weight: normal; margin: 0; }
 
 h1 { font-size: 3em; }
 
@@ -19,7 +19,11 @@ a { color: #fff; font-weight: bold; text-decoration: none; }
 
 a:hover { text-decoration: underline; text-decoration-color: #ff0; }
 
-.header-top { display: flex; justify-content: space-between; align-items: center; }
+header { padding: 1em 0; }
+
+.header-image { height: 75vh; background-size: cover; border-bottom: 1px solid rgba(71, 71, 71, 0.75); }
+
+.header-top { display: flex; justify-content: space-between; align-items: center; padding: 0 1em; border-top: 1px solid rgba(71, 71, 71, 0.75); border-bottom: 1px solid rgba(71, 71, 71, 0.75); background-color: rgba(0, 0, 0, 0.75); }
 
 .header-text { margin: 0; padding: 0; }
 
@@ -44,3 +48,5 @@ a:hover { text-decoration: underline; text-decoration-color: #ff0; }
 
 @media (min-width: 1024px) { .header-text, .header-top nav { width: 40%; }
   .header-logo { display: block; order: 2; width: 20%; text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */
