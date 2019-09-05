@@ -1,0 +1,17 @@
+.tour-table {
+  width: 100%;
+  padding: 1em;
+  border-spacing: 0;
+  td { 
+    text-align: left; 
+    padding: 0.5em;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  td:last-child { text-align: right; }
+  tr:nth-child(even) { background-color: #222; }
+  tr:hover>td { 
+    border-top: 1px solid #ff0; 
+    border-bottom: 1px solid #ff0; 
+  }
+}
