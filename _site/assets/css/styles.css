@@ -1,5 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap");
 @font-face { font-family: Opticorvinus; src: url("../fonts/OPTICorvinus-Skyline.otf") format("opentype"); }
 
 * { box-sizing: border-box; }
 
-/*# sourceMappingURL=styles.css.map */
+body { font-family: 'Libre Franklin', sans-serif; background-color: #000; color: #fff; margin: 0; padding: 0; min-height: 100vh; }
+
+header, main, footer { padding: 1em; }
+
+h1, h2 { font-family: Opticorvinus; font-weight: normal; }
+
+h1 { font-size: 3em; }
+
+h2 { font-size: 2em; }
+
+hr { border: 0; border-bottom: 1px solid #f00; }
+
+a { color: #fff; font-weight: bold; text-decoration: none; }
+
+a:hover { text-decoration: underline; text-decoration-color: #ff0; }
+
+.header-top { display: flex; justify-content: space-between; align-items: center; }
+
+.header-text { margin: 0; padding: 0; }
+
+.burger { display: flex; flex-direction: column; width: 3em; height: 3em; justify-content: space-around; cursor: pointer; }
+
+.burger-line { background-color: #fff; width: 3em; height: 0.3em; border-radius: 10px; }
+
+.navigation { display: none; position: absolute; left: 0; width: 100vw; list-style-type: none; text-align: center; margin: 0; padding: 1em 0; text-transform: uppercase; }
+
+.navigation a { display: block; padding: 1em; background-color: rgba(55, 55, 55, 0.9); margin: 1px; }
+
+.current-link { text-decoration: underline; text-decoration-color: #f00; }
+
+.header-logo { display: none; }
+
+@media (min-width: 768px) { .burger { display: none; }
+  .header-text { order: 1; }
+  .header-top nav { order: 3; text-align: right; }
+  .navigation { display: initial; position: static; width: auto; padding: 0; }
+  .navigation li { display: inline-block; }
+  .navigation a { background-color: initial; } }
+
+@media (min-width: 1024px) { .header-text, .header-top nav { width: 40%; }
+  .header-logo { display: block; order: 2; width: 20%; text-align: center; } }
