@@ -1,8 +1,8 @@
 - name: Home
   link: /
 - name: News
-  link: /band.html
-- name: Band
   link: /news.html
+- name: Band
+  link: /band.html
 - name: Tour
   link: /tour.html

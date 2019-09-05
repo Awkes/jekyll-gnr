@@ -1,0 +1,121 @@
+I"ª<h2 id="tour">Tour</h2>
+<hr />
+
+<table class="tour-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>City</th>
+      <th>Venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>2019-09-25</td>
+        <td class="tour-table-center">Charlotte, US</td>
+        <td class="tour-table-center">Spectrum Centre</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-09-28</td>
+        <td class="tour-table-center">Louisville, US</td>
+        <td class="tour-table-center">Louder Than Life Festival</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-01</td>
+        <td class="tour-table-center">Jacksonville, US</td>
+        <td class="tour-table-center">VyStar Veterans Memorial Arena</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-04</td>
+        <td class="tour-table-center">Austin, US</td>
+        <td class="tour-table-center">Austin City Limits Music Festival</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-07</td>
+        <td class="tour-table-center">Wichita, US</td>
+        <td class="tour-table-center">Intrust Bank Arena</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-11</td>
+        <td class="tour-table-center">Austin, US</td>
+        <td class="tour-table-center">Austin City Limits Music Festival</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-13</td>
+        <td class="tour-table-center">Manchester, US</td>
+        <td class="tour-table-center">Exit 111 Festival</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-15</td>
+        <td class="tour-table-center">Lincoln, US</td>
+        <td class="tour-table-center">Pinnacle Bank Arena</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-18</td>
+        <td class="tour-table-center">Guadalajara, MX</td>
+        <td class="tour-table-center">Estadio Jalisco</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-20</td>
+        <td class="tour-table-center">Tijuana, MX</td>
+        <td class="tour-table-center">Estadio Caliente</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-23</td>
+        <td class="tour-table-center">Oklahoma City, US</td>
+        <td class="tour-table-center">Chesapeake Energy Arena</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-25</td>
+        <td class="tour-table-center">New Orleans, US</td>
+        <td class="tour-table-center">Voodoo Music Festival</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-10-29</td>
+        <td class="tour-table-center">Salt Lake City, US</td>
+        <td class="tour-table-center">Vivint Smart Home Arena</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-11-01</td>
+        <td class="tour-table-center">Las Vegas, US</td>
+        <td class="tour-table-center">Colosseum at Caesars Palace</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+      <tr>
+        <td>2019-11-02</td>
+        <td class="tour-table-center">Las Vegas, US</td>
+        <td class="tour-table-center">Colosseum at Caesars Palace</td>
+        <td><a href="">Tickets</a></td>
+      </tr>
+    
+  </tbody>
+</table>
+:ET

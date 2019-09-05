@@ -1,3 +1,60 @@
-- date: 2019-10-12
-  city: Stockholm
-  ticketlink: /
+- date: 2019-09-25
+  city: Charlotte, US
+  venue: Spectrum Centre
+  ticketlink: #
+- date: 2019-09-28
+  city: Louisville, US
+  venue: Louder Than Life Festival
+  ticketlink: #
+- date: 2019-10-01
+  city: Jacksonville, US
+  venue: VyStar Veterans Memorial Arena
+  ticketlink: #
+- date: 2019-10-04
+  city: Austin, US
+  venue: Austin City Limits Music Festival
+  ticketlink: #
+- date: 2019-10-07
+  city: Wichita, US
+  venue: Intrust Bank Arena
+  ticketlink: #
+- date: 2019-10-11
+  city: Austin, US
+  venue: Austin City Limits Music Festival
+  ticketlink: #
+- date: 2019-10-13
+  city: Manchester, US
+  venue: Exit 111 Festival
+  ticketlink: #
+- date: 2019-10-15
+  city: Lincoln, US
+  venue: Pinnacle Bank Arena
+  ticketlink: #
+- date: 2019-10-18
+  city: Guadalajara, MX
+  venue: Estadio Jalisco
+  ticketlink: #
+- date: 2019-10-20
+  city: Tijuana, MX
+  venue: Estadio Caliente
+  ticketlink: #
+- date: 2019-10-23
+  city: Oklahoma City, US
+  venue: Chesapeake Energy Arena
+  ticketlink: #
+- date: 2019-10-25
+  city: New Orleans, US
+  venue: Voodoo Music Festival
+  ticketlink: #
+- date: 2019-10-29
+  city: Salt Lake City, US
+  venue: Vivint Smart Home Arena
+  ticketlink: #
+- date: 2019-11-01
+  city: Las Vegas, US
+  venue: Colosseum at Caesars Palace
+  ticketlink: #
+- date: 2019-11-02
+  city: Las Vegas, US
+  venue: Colosseum at Caesars Palace
+  ticketlink: #
