@@ -1,0 +1,25 @@
+.band-member { 
+  text-align: center; 
+  padding: 1em;
+  border-bottom: 1px solid #f00;
+  &:last-child { border: 0; }
+}
+.band-member-info { }
+.band-member-img {
+  max-width: 100%;
+  max-height: 50vh;
+}
+
+@media(min-width: 768px) {
+  .band-member {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .band-member-info { padding: 1em; }
+  
+  .band-member:nth-child(even) {
+    .band-member-info { order: 2 }
+  }
+}
