@@ -4,11 +4,14 @@
   border-bottom: 1px solid #f00;
   &:last-child { border: 0; }
 }
-.band-member-info { }
 .band-member-img {
   max-width: 100%;
   max-height: 50vh;
+  scale: 0;
+  opacity: 0;
 }
+.band-member-info>h3>span { opacity: 0; }
+.band-member-info>p>span { opacity: 0; }
 
 @media(min-width: 768px) {
   .band-member {

@@ -1,21 +1,28 @@
 - name: Axl Rose
+  id: band-axl
   instruments: Lead vocals, piano, occasional guitar and percussion.
   image: /assets/images/band-axl.jpg
 - name: Duff McKagan
+  id: band-duff
   instruments: Bass, backing and occasional lead vocals, rhythm guitar, percussion.
   image: /assets/images/band-duff.jpg
 - name: Slash
+  id: band-slash
   instruments: Lead and rhythm guitars, backing vocals.
   image: /assets/images/band-slash.jpg
 - name: Dizzy Reed
+  id: band-dizzy
   instruments: Keyboards, synthesizers, backing vocals, percussion.
   image: /assets/images/band-dizzy.jpg
 - name: Richard Fortus
+  id: band-richard
   instruments: Rhythm and lead guitars, backing vocals.
   image: /assets/images/band-richard.jpg
 - name: Frank Ferrer
+  id: band-frank
   instruments: Drums, percussion, occasional backing vocals.
   image: /assets/images/band-frank.jpg
 - name: Melissa Reese
+  id: band-melissa
   instruments: Keyboards, synthesizers, sub-bass, programming, backing vocals.
   image: /assets/images/band-melissa.jpg
