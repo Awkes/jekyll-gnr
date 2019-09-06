@@ -1,3 +1,15 @@
+(() => {
+  // Hamburgarmeny
+  const burger = document.querySelector('#burger');
+  const menu = document.querySelector('.navigation');
+  burger.addEventListener('click', toggleMenu);
+
+  function toggleMenu() {
+    burger.classList.toggle('burger-open');
+    menu.classList.toggle('show-navigation');
+  }
+})();
+
 // Funktion för att kontrollera om ett element är i viewporten
 function isElementInViewport (el) {
   var rect = el.getBoundingClientRect();
