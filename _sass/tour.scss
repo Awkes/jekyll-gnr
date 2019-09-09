@@ -2,6 +2,7 @@
   width: 100%;
   padding: 1em;
   border-spacing: 0;
+  overflow: hidden;
   td { 
     text-align: left; 
     padding: 0.5em;
@@ -9,9 +10,19 @@
     border-bottom: 1px solid transparent;
   }
   td:last-child { text-align: right; }
-  tr:nth-child(even) { background-color: #222; }
-  tr:hover>td { 
+  .show-row>td {
+    transform: translate(-100vw);
+    transition: ease-in-out 0.5s;
+  }
+  .show-row:nth-child(even)>td { 
+    background-color: #222; 
+    transform: translate(100vw);
+  }
+  .show-row:hover>td { 
     border-top: 1px solid #ff0; 
     border-bottom: 1px solid #ff0; 
+  }
+  .show-row-visible>td, .show-row-visible:nth-child(even)>td {
+    transform: translate(0);
   }
 }

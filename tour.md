@@ -2,6 +2,7 @@
 layout: default
 title: Tour
 image: /assets/images/tour.jpg
+js: /assets/js/tour.js
 ---
 
 ## Tour
@@ -10,7 +11,7 @@ image: /assets/images/tour.jpg
 <table class="tour-table">
   <tbody>
     {% for item in site.data.tour %}
-      <tr>
+      <tr id="{{item.date}}" class="show-row">
         <td>{{item.date}}</td>
         <td>
           <b>{{item.city}}</b>
