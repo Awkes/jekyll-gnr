@@ -16,10 +16,12 @@
     bandMembers.forEach(bandMember => {    
       if (isElementInViewport(bandMember) && !bandMemberAnimated[bandMember.id]) {
         bandMemberAnimated[bandMember.id] = true;
+        if (Object.keys(bandMemberAnimated).length === bandMembers.length) { removeEventListener('scroll', bandAnimation); } // Tar bort scroll eventlistenern om alla element animerats
         anime.timeline().add({
           targets: '#'+bandMember.id+' .band-member-img',
           opacity: [0,1],
           scale: [0,1],
+          duration: '300ms',
           easing: 'easeInOutExpo'
         }).add({
           targets: [
