@@ -15,7 +15,16 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-main { padding: 1em; }
+.container { 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+main { 
+  padding: 1em; 
+  flex-grow: 1;
+}
 h1,h2,h3 { 
   font-family: Opticorvinus; 
   font-weight: normal;
