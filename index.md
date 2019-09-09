@@ -1,7 +1,7 @@
 ---
 title: Home
 
-js: ./assets/js/video.js
+js: ./assets/js/index-anim.js
 ---
 
 
@@ -9,7 +9,12 @@ js: ./assets/js/video.js
   <source src="./assets/video/gnr.mp4" type="video/mp4">
 </video>
 
-<div class="empty-fill"></div>
+<div class="index-anim">
+  <h2 class="index-anim-song"> Welcome to the jungle</h2>
+  <h3 class="index-anim-album"> Appetite for destruction</h3>
+</div>
+
+
 
 <div class="content">
 
