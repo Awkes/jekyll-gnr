@@ -8,6 +8,20 @@
     burger.classList.toggle('burger-open');
     menu.classList.toggle('show-navigation');
   }
+
+  // Header animations
+  document.querySelector('.header-text').classList.remove('header-text-hidden');
+  document.querySelector('#nav').classList.remove('nav-hidden');
+  
+  const headerLogo = document.querySelector('#header-logo');
+  const animateLogo = anime({
+    targets: headerLogo,
+    autoplay: false,
+    loop: true,
+    scale: [1,1.1]
+  });
+  headerLogo.addEventListener('mouseover', animateLogo.play);
+  headerLogo.addEventListener('mouseout', animateLogo.pause);
 })();
 
 // Funktion för att kontrollera om ett element är i viewporten
