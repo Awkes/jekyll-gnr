@@ -6,12 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  span{
+    opacity: 0;
+  }
 }
 .index-anim-song{
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 3px;
-
 }
 .index-anim-album{
   text-transform: uppercase;
