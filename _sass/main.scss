@@ -250,7 +250,7 @@ footer {
   footer {
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: start;
   }
   .footer-icons,.footer-text { width: 50%; }
   .footer-icons { 
@@ -266,7 +266,7 @@ footer {
   }
 }
 
-@media(min-width: 1060px) {
+@media(min-width: 1122px) {
   header { padding-top: 3em; }
   .header-text,.header-top nav { width: 40%; }
   .header-logo { 
