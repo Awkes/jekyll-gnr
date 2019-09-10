@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Band
 image: /assets/images/gnr-stage-01.jpg
 js: /assets/js/band.js
