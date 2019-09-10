@@ -86,11 +86,4 @@ function volumeControl(e) {
 
 function restartVideo(e) {
   video.currentTime = 0;
-  indexAnimation.restart();
-  indexAnimation.pause();
-
-  let y = setInterval(videoStatus, 100);
-  if (!video.playing) {
-    clearInterval(y);
-  }
 }
