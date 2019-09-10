@@ -10,8 +10,10 @@
   }
 
   // Header animations
-  document.querySelector('.header-text').classList.remove('header-text-hidden');
-  document.querySelector('#nav').classList.remove('nav-hidden');
+  addEventListener('load', () => {
+    document.querySelector('.header-text').classList.remove('header-text-hidden');
+    document.querySelector('#nav').classList.remove('nav-hidden');
+  });
   
   const headerLogo = document.querySelector('#header-logo');
   const animateLogo = anime({
