@@ -110,6 +110,10 @@ header {
     background-color: rgba(55, 55, 55, 0.75);
     margin: 0;
   }
+  a:hover {
+    text-decoration: none;
+    animation: nav-animation 0.2s infinite;
+  }
   transform: scale(1,0);
   transform-origin: 50% 0%;
   transition: ease-in-out 0.2s;
@@ -118,11 +122,75 @@ header {
   display: block;
   transform: scale(1,1);
 }
+// 〚  〛
 .current-link { 
-  text-decoration: underline;
-  text-decoration-color: #f00;
+  &:before, &:after { 
+    position: relative;
+    color: #ff0; 
+  }
+  &:before { 
+    bottom: 0.4em;
+    left: 0.4em;
+    content: '⌜ '; 
+  }
+  &:after { 
+    top: 0.3em;
+    right: 0.4em;
+    content: ' ⌟'; 
+  }
 }
 .header-logo { display: none; }
+
+@keyframes nav-animation {
+  0% {
+    text-shadow: 
+      0 -2px 2px rgba(255, 0, 0, 0.9),
+      0 2px 2px rgba(255, 0, 0, 0.9),
+      -5px 0 2px rgba(255, 0, 0, 0.9),
+      5px 0 2px rgba(255, 0, 0, 0.9),
+      -1px -1px 1px rgba(255, 0, 0, 0.9),
+      1px 1px 1px rgba(255, 0, 0, 0.9),    
+      -1px 1px 1px rgba(255, 0, 0, 0.9),
+      1px -1px 1px rgba(255, 0, 0, 0.9)
+    ;
+  }
+  33% {
+    text-shadow: 
+      0 -2px 2px rgba(255, 0, 0, 0.9),
+      0 2px 2px rgba(255, 0, 0, 0.9),
+      -5px 0 2px rgba(255, 0, 0, 0.9),
+      5px 0 2px rgba(255, 0, 0, 0.9),
+      -1px -1px 1px rgba(255, 0, 0, 0.9),
+      1px 1px 1px rgba(255, 0, 0, 0.9),    
+      -1px 1px 1px rgba(255, 0, 0, 0.9),
+      1px -1px 1px rgba(255, 0, 0, 0.9)  
+    ;
+  }
+  66% {
+    text-shadow: 
+      0 -2px 2px rgba(255, 0, 0, 0.9),
+      0 2px 2px rgba(255, 0, 0, 0.9),
+      -6px 0 2px rgba(255, 0, 0, 0.9),
+      6px 0 2px rgba(255, 0, 0, 0.9),
+      -1px -1px 1px rgba(255, 0, 0, 0.9),
+      1px 1px 1px rgba(255, 0, 0, 0.9),    
+      -1px 1px 1px rgba(255, 0, 0, 0.9),
+      1px -1px 1px rgba(255, 0, 0, 0.9)  
+    ;
+  }
+  100% {
+    text-shadow: 
+      0 -3px 2px rgba(255, 0, 0, 0.9),
+      0 3px 2px rgba(255, 0, 0, 0.9),
+      -5px 0 2px rgba(255, 0, 0, 0.9),
+      5px 0 2px rgba(255, 0, 0, 0.9),
+      -1px -1px 1px rgba(255, 0, 0, 0.9),
+      1px 1px 1px rgba(255, 0, 0, 0.9),    
+      -1px 1px 1px rgba(255, 0, 0, 0.9),
+      1px -1px 1px rgba(255, 0, 0, 0.9)  
+    ;
+  }
+}
 
 // Animera header-element
 .header-text,#nav { transition: ease-in-out 0.3s; }
