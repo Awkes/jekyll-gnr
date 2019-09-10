@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
 
-<p>
-    {{ page.date | date_to_string }}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
-      - <a href="{{ author.url }}">{{ author.name }}</a>
-    {% endif %}
-</p>
+{% assign URL = site.data.nav | where:"name", "News" | first %}
 
-{{ content }}
+<div class="postPage-container">
+  <div class="postPage-item">
+    <h2 class="postPage-title">{{ page.title }}</h2>
+    <p class="postPage-date">{{ page.date | date_to_string }}</p>
+  </div>
+
+  <img src="{{ page.postimage }}" class="postPage-img" />
+
+  <div class="postPage-textContent">
+    {{ content }}
+    <a href="{{ URL.link }}">«­ News</a>
+  </div>
+</div>

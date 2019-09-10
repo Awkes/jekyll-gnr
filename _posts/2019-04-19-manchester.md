@@ -1,7 +1,7 @@
 ---
 title: GN'R COMING TO MANCHESTER, TN THIS OCTOBER
 date: Apr 19, 2019
-image: /assets/images/manchester.jpg
+postimage: /assets/images/manchester.jpg
 ---
 
 

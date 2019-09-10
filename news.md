@@ -17,7 +17,7 @@ image: /assets/images/news-hero.jpg
     </div>
 
     <div class="image-flex">
-    <img src="{{post.image}}">
+    <a href="{{post.url}}"><img src="{{post.postimage}}"></a>
     </div>
     <div class="flex-bottom">
       <p>{{ post.excerpt }}</p>

@@ -31,7 +31,7 @@
     font-size: 0.8em;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 1060px) {
     .news-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -50,7 +50,7 @@
         }
       }
       .flex-bottom {
-        padding: 0 3em;
+        padding: 0 1em;
         text-align: left;
       }  
     }
@@ -63,8 +63,8 @@
     .news-container:last-child{
       border: none;
     }
+    
   } //Media Query
   
-  @media (min-width: 1060px) {
-  }
+  
   
