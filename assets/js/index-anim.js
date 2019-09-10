@@ -3,29 +3,27 @@ const animAlbum = document.querySelector(".index-anim-album");
 
 spanCharacters(animSong);
 spanCharacters(animAlbum);
-
-function indexAnimation() {
-  anime
-    .timeline()
-    .add({
-      targets: ".index-anim-song span",
-      scale: [4, 1],
-      opacity: [0, 1],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 950,
-      delay: (el, i) => 80 * i
-    })
-    .add({
-      targets: ".index-anim-album span",
-      scale: [4, 1],
-      opacity: [0, 1],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 950,
-      delay: (el, i) => 70 * i
-    });
-}
+const indexAnimation = anime
+  .timeline({autoplay: false})
+  .add({
+    targets: ".index-anim-song span",
+    scale: [4, 1],
+    opacity: [0, 1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 80 * i
+  })
+  .add({
+    targets: ".index-anim-album span",
+    scale: [4, 1],
+    opacity: [0, 1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => (1700 + (70 * i))
+  });
+  
 
 Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
   get: function(){
@@ -37,10 +35,9 @@ const video = document.getElementById("myVideo");
 var x = setInterval(videoStatus, 100);
 function videoStatus(){
   if(video.playing) {
-    console.log(video.playing);
-    // Second animation to start at 10sec
-    setTimeout(indexAnimation, 5475)
     clearInterval(x);
+    setTimeout(indexAnimation.play, 5475)
+    // Second animation to start at 10sec
   }
 }
 
@@ -70,13 +67,14 @@ async function videoReady() {
 
 function playPause() {
   if (video.paused) {
-    playBtn.children[0].classList.remove("fa-pause");
-    playBtn.children[0].classList.add("fa-play");
-    video.play();
-  } else {
     playBtn.children[0].classList.remove("fa-play");
     playBtn.children[0].classList.add("fa-pause");
+    video.play();
+  } else {
+    playBtn.children[0].classList.remove("fa-pause");
+    playBtn.children[0].classList.add("fa-play");
     video.pause();
+    indexAnimation.pause();
   }
 }
 
