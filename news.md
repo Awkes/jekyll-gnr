@@ -4,7 +4,7 @@ image: /assets/images/news-hero.jpg
 js: /assets/js/news.js
 ---
 
-# News
+## News
 
 ---
 
