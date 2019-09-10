@@ -5,7 +5,7 @@ js: ./assets/js/index-anim.js
 ---
 
 
-<video autoplay loop id="myVideo">
+<video autoplay muted playsinline loop id="myVideo">
   <source src="./assets/video/gnr.mp4" type="video/mp4">
 </video>
 
@@ -22,9 +22,9 @@ js: ./assets/js/index-anim.js
     <button id="video-restart"><i class="fa fa-step-backward"></i></button>
 
   	<div class="volume-container">
-       <span class="sound-sign">-</span>
-          <input type="range" min="1" max="100" value="50"  step="1" class="volume-control" id="volume">
-        <span class="sound-sign">+</span>
+       <span class="sound-sign"></span>
+          <input type="range" min="1" max="100" value="0"  step="1" class="volume-control" id="volume">
+        <span class="sound-sign"></span>
     </div>
 
 </div>
