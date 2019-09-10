@@ -4,7 +4,7 @@ const animAlbum = document.querySelector(".index-anim-album");
 spanCharacters(animSong);
 spanCharacters(animAlbum);
 const indexAnimation = anime
-  .timeline({autoplay: false})
+  .timeline({ autoplay: false })
   .add({
     targets: ".index-anim-song span",
     scale: [4, 1],
@@ -21,32 +21,32 @@ const indexAnimation = anime
     translateZ: 0,
     easing: "easeOutExpo",
     duration: 950,
-    delay: (el, i) => (1700 + (70 * i))
+    delay: (el, i) => 1700 + 70 * i
   });
-  
 
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-  get: function(){
-      return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+Object.defineProperty(HTMLMediaElement.prototype, "playing", {
+  get: function() {
+    return !!(
+      this.currentTime > 0 &&
+      !this.paused &&
+      !this.ended &&
+      this.readyState > 2
+    );
   }
-})
+});
 
 const video = document.getElementById("myVideo");
 var x = setInterval(videoStatus, 100);
-function videoStatus(){
-  if(video.playing) {
+function videoStatus() {
+  if (video.playing) {
     clearInterval(x);
-    setTimeout(indexAnimation.play, 5475)
-    // Second animation to start at 10sec
+    setTimeout(indexAnimation.play, 5475);
   }
 }
-
-
 
 /****************************/
 /*       Video Controls     */
 /****************************/
-console.log(video);
 const userVolume = document.getElementById("volume");
 const playBtn = document.getElementById("video-play");
 const restartBtn = document.getElementById("video-restart");
@@ -58,11 +58,11 @@ restartBtn.addEventListener("click", restartVideo);
 video.addEventListener("canplay", videoReady);
 
 async function videoReady() {
- try{
-   await video.play();
- } catch(err){
-   console.log(err.message);
- }
+  try {
+    await video.play();
+  } catch (err) {
+    console.log(err.message);
+  }
 }
 
 function playPause() {
@@ -70,6 +70,7 @@ function playPause() {
     playBtn.children[0].classList.remove("fa-play");
     playBtn.children[0].classList.add("fa-pause");
     video.play();
+    indexAnimation.play();
   } else {
     playBtn.children[0].classList.remove("fa-pause");
     playBtn.children[0].classList.add("fa-play");
@@ -85,4 +86,11 @@ function volumeControl(e) {
 
 function restartVideo(e) {
   video.currentTime = 0;
+  indexAnimation.restart();
+  indexAnimation.pause();
+
+  let y = setInterval(videoStatus, 100);
+  if (!video.playing) {
+    clearInterval(y);
+  }
 }

@@ -33,7 +33,7 @@
 
 .content {
   position: absolute;
-  bottom: 17%;
+  bottom: 20%;
   right: 30%;
   left: 30%;
   width: 40vw;
@@ -120,6 +120,7 @@ button:hover {
     margin-right: auto;
     left: 0;
     right: 0;
+    bottom: 16%;
   }
 
   button {
@@ -144,7 +145,7 @@ button:hover {
 @media (min-width: 1060px) {
   .content {
     display: flex;
-    bottom: 12%;
+    bottom: 13%;
     right: 0;
     left: 68%;
   }
