@@ -1,6 +1,7 @@
 ---
 title: News
 image: /assets/images/news-hero.jpg
+js: /assets/js/news.js
 ---
 
 # News
@@ -9,7 +10,7 @@ image: /assets/images/news-hero.jpg
 
 {% for post in site.posts %}
 
-<div class="news-container">
+<div class="news-container" id="a{{post.date | date: '%Y-%m-%d' }}">
 
     <div class="flex-top"> 
       <h3>{{ post.title | upcase }}</h3>
