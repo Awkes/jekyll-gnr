@@ -194,8 +194,8 @@ header {
 
 // Animera header-element
 .header-text,#nav { transition: ease-in-out 0.3s; }
-.header-text-hidden { transform: translateX(100%); }
-.nav-hidden { transform: translateX(-130%); }
+.header-text-hidden { transform: translateX(120%); }
+.nav-hidden { transform: translateX(-150%); }
 
 // Footer
 footer {
